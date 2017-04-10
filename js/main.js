@@ -16,10 +16,11 @@ function moverDiv(tecla){
     if (teclaPresionada==39){
         izqDer+=20;
         cabezaSerpiente.style.marginLeft = izqDer+ "px";
-        
+                
         if (izqDer>480){
             alert("Game Over");
             cabezaSerpiente.style.marginLeft= "0px";
+            cabezaSerpiente.style.marginTop= "0px"
         }
     } else if (teclaPresionada==37){
         izqDer-=20;
@@ -27,6 +28,7 @@ function moverDiv(tecla){
         if (izqDer<0){
             alert("Game Over");
             cabezaSerpiente.style.marginLeft= "0px";
+            cabezaSerpiente.style.marginTop= "0px"
         }
     } else if (teclaPresionada==40){
         arrAba+=20;
@@ -34,6 +36,7 @@ function moverDiv(tecla){
         if (arrAba>480){
             alert("Game Over");
             cabezaSerpiente.style.marginTop= "0px";
+            cabezaSerpiente.style.marginLeft= "0px"
         }
     } else if (teclaPresionada==38){
         arrAba-=20;
@@ -42,6 +45,7 @@ function moverDiv(tecla){
         if (arrAba<0){
             alert("Game Over");
             cabezaSerpiente.style.marginTop= "0px";
+            cabezaSerpiente.style.marginLeft= "0px"
         }
     } else {
         alert("Juega solo con las flechas");
